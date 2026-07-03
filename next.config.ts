@@ -1,10 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  
-  // Note: If your repository is named "yash-portfolio" (not your username.github.io)
-  // you might also need to add a basePath so assets load correctly:
-  // basePath: '/yash-portfolio', 
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",
+  basePath: "/yash-portfolio",
+  assetPrefix: "/yash-portfolio/",
 };
 
 export default nextConfig;
